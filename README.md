@@ -121,7 +121,7 @@ TagUI的界面是纯命令行。
 [TagUIcn/tagui](https://gitee.com/TagUIcn/tagui.git)
 
 3. RPA for Python  
-以前叫做“TagUI for Python”，这是一个用于RPA开发的Python包。RPA for Python是在TagUI上构建的，因此有了最初的名字。它拥有网站自动化、计算机视觉自动化、光学字符识别和键盘鼠标自动化等基本功能。
+以前叫做“TagUI for Python”，这是一个用于RPA开发的Python包。RPA for Python是在TagUI上构建的，因此有了最初的名字。它拥有网站自动化、计算机视觉自动化、光学字符识别和键盘鼠标自动化等基本功能。很好地完成UI自动化/RPA的软件包。但与商业RPA软件不同，这个工具只是许多其他软件包的一个组件，Python用户可以与之结合以创建复杂的东西。它更像是一个配角，是用户工具箱中的工具之一。但商业RPA软件更像是用户在数字自动化工作中占据中心舞台和主要软件。
 [tebelorg/RPA-Python：](https://github.com/tebelorg/RPA-Python.git)https://github.com/tebelorg/RPA-Python.git
 
 4. OpenRPA  

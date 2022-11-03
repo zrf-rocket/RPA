@@ -1,14 +1,13 @@
 import rpa as r
-import sys
 
 # 用到系统操作我们需要把r.init(visual_automation = True)这个参数设置为True。
 # visual_automation = True表示动画可见。
 # 需要注意的是本地操作需要安装JAVA，我是根据他提示的错误代码安装了Amazon Corretto这个版本的JAVA。
-r.init(chrome_browser=True, visual_automation=True)
+r.init(chrome_browser=False, visual_automation=True)
 
 ##### 网页操作
 r.url('https://www.baidu.com/')
-r.type('//*[@id="kw"]','淘宝[enter]')
+r.type('//*[@id="kw"]', '淘宝[enter]')
 # 用法1
 # 参数1：xpath表示输入的网页xpath，参数2：words表示输入的是什么内容。
 # xpath获取方式,谷歌浏览器按F12，然后在想要查看位置右键检查：
@@ -47,9 +46,8 @@ print(read_res)
 # 这允许您button.png在image文件夹中查找。
 
 # 这里可以通过OCR读取图片中的文字，例如:
-print(r.read('//*[@id="hotsearch-content-wrapper"]/li[1]/a/span[2]'))
-print(r.read('pdf_window.png'))
-
+# print(r.read('//*[@id="hotsearch-content-wrapper"]/li[1]/a/span[2]'))
+# print(r.read('pdf_window.png'))
 
 
 r.snap('page', "results.png")
@@ -70,13 +68,8 @@ r.snap('page', "results.png")
 # 点击特定元素
 
 
-
-
 # 使用滚轮
-r.vision('wheel(WHEEL_UP, 120)')
-
-
-
+# r.vision('wheel(WHEEL_UP, 120)')
 
 
 r.close()

@@ -1,10 +1,10 @@
 import rpa as r
-
+# 鼠标自动化
 r.init(chrome_browser=True, visual_automation=True)
 
 
 ##### 计算机软件操作
-# r.click(12, 34) # left-click on element
+r.click(12, 34) # left-click on element
 r.rclick() # right-click on element
 r.dclick() # double-click on element
 r.hover() # move mouse to element
@@ -22,7 +22,5 @@ r.hover('TEMP/aim_pic_name.png')
 r.rclick('TEMP/aim_pic_name.png')
 r.click('TEMP/r_key_open_ways.png')
 r.click('TEMP/r_key_open_ways_org_pic.png')
-
-
 
 r.close()
